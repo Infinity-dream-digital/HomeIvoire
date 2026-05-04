@@ -1,0 +1,9 @@
+[0503/155922.775:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
+[0503/155935.314:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
+[0503/160119.830:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
+[0503/160120.422:ERROR:crashpad_client_win.cc(868)] not connected
+[0503/160120.545:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
+[0503/172052.778:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
+[0503/172053.725:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
+[0503/173323.071:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
+[0503/173324.028:ERROR:registration_protocol_win.cc(108)] CreateFile: Le fichier spécifié est introuvable. (0x2)
