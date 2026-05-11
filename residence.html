@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <style>
+<style>
         .product-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -22,7 +22,26 @@
             -webkit-appearance: none;
             margin: 0;
         }
-    </style>
+
+.hero {
+  min-height: 50vh;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  padding: 7rem 4rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:url("./Appart\ 2.jpg");
+  background-size:cover;
+  background-position: right center;
+  background-repeat: no-repeat ; ;
+}
+</style>
 </head>
 <body class="bg-white">
     <!-- Header -->
@@ -31,7 +50,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-house-chimney"  style="color: #E1A624; font-size: 30px;"></i>
-                    <h1 class="text-3xl font-bold text-[#E1A624]" >Home<span class="text-[#264653]">Ivoire</span></h1>
+                    <a href="index.html"><h1 class="text-3xl font-bold text-[#E1A624]" >Home<span class="text-[#264653]">Ivoire</span></h1></a>
                 </div>
                 <div class="relative">
                     <button id="cartBtn" class="flex items-center space-x-1 bg-[#E1A624] text-white px-4 py-2 rounded-full font-semibold hover:bg-[#264653] transition">
@@ -40,75 +59,14 @@
             </div>
         </div>
     </header>
+   <!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+</section>
 
-     <!--bienvenue-->
-    <section class="py-20 bg-white"   id="acceuil">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-               
-                <div class="slider-container">
-                  <div class="slider">
-
-                   <img src="./appart 5.jpg" class="slide active">
-                   <img src="./appart 1.jpg" class="slide">
-                   <img src="./appart3.jpg" class="slide">
-                   <img src="./Appart 2.jpg" class="slide">
-                   <img src="./appart 4.jpg" class="slide">
-
-                 </div>
-
-                  <button class="prev">&#10094;</button>
-                  <button class="next">&#10095;</button>
-                </div>
-                 <div class="lg:w-1/2 lg:pl-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-[#E1A624]" >Home<span class="text-[#264653]">Ivoire</span></h2>
-                    <p class="text-black  mb-6">Découvrez notre sélection d’appartements modernes, conçus pour offrir confort, sécurité et élégance au quotidien.
-Situés dans des zones stratégiques, nos biens vous garantissent un accès facile aux commodités essentielles.
-Chaque logement propose des espaces lumineux, des finitions soignées et un cadre de vie agréable.
-Que ce soit pour y vivre ou pour investir, vous trouverez une offre adaptée à vos besoins.
-Profitez d’un excellent rapport qualité-prix dans un environnement calme et sécurisé.
-Faites le choix d’un investissement durable et d’un avenir serein dès aujourd’hui.
-</p>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Categories -->
-    <section class="max-w-6xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold text-center text-[#E1A624] mb-12">Nos Catégories</h2>
-        <div class="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory">
-            <div class="min-w-[85%] md:min-w-0 snap-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                <img src="./appart 4.jpg" alt="Vêtements" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-[#E1A624] mb-2">Nos résidences</h3>
-                    <p class="text-[#264653] mb-4">Ensemble immobilier moderne offrant sécurité, confort et espaces communs de qualité, idéal pour un cadre de vie harmonieux. </p>
-                    <a href="residence.html"><button class="text-[#E1A624] font-medium hover:text-black">Parcourir →</button></a>
-                </div>
-            </div>
-           <div class="min-w-[85%] md:min-w-0 snap-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                <img src="./Appart 2.jpg" alt="Chaussures" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-[#E1A624] mb-2">Nos appartements</h3>
-                    <p class="text-[#264653] mb-4">Logement pratique et élégant, conçu pour optimiser l’espace et offrir un confort adapté à la vie quotidienne.</p>
-                    <a href="appart.html"> <button class="text-[#E1A624] font-medium hover:text-black">Parcourir →</button></a>
-                </div>
-            </div>
-            <div class="min-w-[85%] md:min-w-0 snap-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                <img src="./appart 5.jpg" alt="Chaussures" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-[#E1A624] mb-2">Nos villas</h3>
-                    <p class="text-[#264653] mb-4">Habitation spacieuse et indépendante, parfaite pour profiter de tranquillité, d’intimité et d’un cadre de vie haut de gamme.</p>
-                    <a href="villa.html"> <button class="text-[#E1A624] font-medium hover:text-black">Parcourir →</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products -->
+<!-- Featured Products -->
     <section class="max-w-6xl mx-auto px-4 py-12 bg-white" id="bestprod">
-        <h2 class="text-3xl font-bold text-center text-[#E1A624] mb-12">Les plus Populaires</h2>
+        <h2 class="text-3xl font-bold text-center text-[#E1A624] mb-12">Nos résidences</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Product 1 - Dress -->
             <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
@@ -242,74 +200,7 @@ Faites le choix d’un investissement durable et d’un avenir serein dès aujou
         </div>
     </section>
 
-    
-<section class="max-w-4xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center text-[#E1A624] mb-10">FAQ - Questions fréquentes</h2>
 
-    <div class="faq">
-
-        <div class="faq-item">
-            <input type="checkbox" id="q1">
-            <label for="q1">Quels types de logements proposez-vous ?</label>
-            <div class="content">
-                <p>Nous proposons des résidences modernes, appartements confortables et villas haut de gamme adaptés à tous les besoins.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <input type="checkbox" id="q2">
-            <label for="q2">Peut-on visiter un logement avant de réserver ?</label>
-            <div class="content">
-                <p>Oui, vous pouvez planifier une visite en nous contactant directement via le site.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <input type="checkbox" id="q3">
-            <label for="q3">Quels documents sont nécessaires pour louer ?</label>
-            <div class="content">
-                <p>Une pièce d’identité, un justificatif de revenus et une caution peuvent être demandés.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <input type="checkbox" id="q4">
-            <label for="q4">Les logements sont-ils sécurisés ?</label>
-            <div class="content">
-                <p>Oui, nos résidences disposent de systèmes de sécurité modernes et parfois de gardiennage.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <input type="checkbox" id="q5">
-            <label for="q5">Les logements sont-ils meublés ?</label>
-            <div class="content">
-                <p>Certains logements sont meublés, d'autres non. Cela dépend de l’offre choisie.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!--bienvenue-->
-    <section class="py-20 bg-white"   id="acceuil">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 lg:pl-12">
-                    <h2 class="text-3xl md:text-2xl font-bold text-center text-black mb-6 text-black" >Vendez vous-même un bien immobilier sur <span class="text-3xl font-bold text-[#E1A624]"  >Home</span><span class="text-3xl font-bold text-[#264653]" >Ivoire</span></h2>
-                    <p class="text-black font-bold mb-6" style="margin-left: 50px;"><i class="fa-solid fa-circle-check"></i> Présentez votre bien et ses caractéristiques </p>
-                    <p class="text-black font-bold mb-6" style="margin-left: 50px;"><i class="fa-solid fa-circle-check"></i> Définissez le prix de vente de votre maison ou appartement </p>
-                     <p class="text-black font-bold mb-6" style="margin-left: 50px;"><i class="fa-solid fa-circle-check"></i> Reçever des clients et profiter de votre bien</p>
-                </div>
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
-                    <img src="./clé.jpg" class="rounded-lg shadow-xl w-full max-w-lg mx-auto floating">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    
 
 <style>
 .slider-container {
@@ -353,55 +244,6 @@ button.prev, button.next {
 
 button.prev { left: 10px; }
 button.next { right: 10px; }
-
-
-.faq-item {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-.faq-item input {
-    display: none;
-}
-
-.faq-item label {
-    display: block;
-    padding: 15px;
-    background: #f9f9f9;
-    cursor: pointer;
-    font-weight: bold;
-    color: #264653;
-    transition: 0.3s;
-}
-
-.faq-item label:hover {
-    background: #E1A624;
-    color: white;
-}
-
-.faq-item .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    background: white;
-    padding: 0 15px;
-}
-
-.faq-item .content p {
-    margin: 15px 0;
-    color: #555;
-}
-
-/* Quand on clique */
-.faq-item input:checked ~ .content {
-    max-height: 200px;
-}
-
-.faq-item input:checked + label {
-    background: #E1A624;
-    color: white;
-}
-
 </style>
 
 <script>
@@ -463,3 +305,5 @@ document.querySelectorAll(".slider-container").forEach(container => {
 });
 
 </script>
+</body>
+</html>
